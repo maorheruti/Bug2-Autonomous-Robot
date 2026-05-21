@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" role="img" aria-labelledby="title desc">
+  <title id="title">Architecture evolution from RobotChaser to Bug2</title>
+  <desc id="desc">Comparison of RobotChaser PC-side navigation and Bug2 onboard ESP32 navigation.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2b2f36"/>
+    </marker>
+    <style>
+      .panel { fill: #f7f9fc; stroke: #cfd7e3; stroke-width: 2; rx: 14; }
+      .box { fill: #ffffff; stroke: #546174; stroke-width: 2; rx: 10; }
+      .title { font: 700 24px Arial, sans-serif; fill: #172033; }
+      .label { font: 600 19px Arial, sans-serif; fill: #172033; }
+      .small { font: 16px Arial, sans-serif; fill: #445065; }
+      .arrow { stroke: #2b2f36; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+      .note { font: 17px Arial, sans-serif; fill: #344052; }
+    </style>
+  </defs>
+
+  <rect x="35" y="35" width="1030" height="155" class="panel"/>
+  <text x="60" y="75" class="title">RobotChaser: PC-side navigation</text>
+
+  <rect x="75" y="105" width="185" height="58" class="box"/>
+  <text x="167.5" y="140" text-anchor="middle" class="label">OptiTrack</text>
+
+  <rect x="330" y="105" width="220" height="58" class="box"/>
+  <text x="440" y="131" text-anchor="middle" class="label">PC navigation</text>
+  <text x="440" y="153" text-anchor="middle" class="small">pure pursuit logic</text>
+
+  <rect x="620" y="105" width="195" height="58" class="box"/>
+  <text x="717.5" y="140" text-anchor="middle" class="label">Motion command</text>
+
+  <rect x="875" y="105" width="150" height="58" class="box"/>
+  <text x="950" y="140" text-anchor="middle" class="label">ESP32 robot</text>
+
+  <path d="M260 134 H330" class="arrow"/>
+  <path d="M550 134 H620" class="arrow"/>
+  <path d="M815 134 H875" class="arrow"/>
+
+  <rect x="35" y="235" width="1030" height="155" class="panel"/>
+  <text x="60" y="275" class="title">Bug2 project: onboard ESP32 navigation</text>
+
+  <rect x="75" y="305" width="185" height="58" class="box"/>
+  <text x="167.5" y="340" text-anchor="middle" class="label">OptiTrack</text>
+
+  <rect x="330" y="305" width="190" height="58" class="box"/>
+  <text x="425" y="331" text-anchor="middle" class="label">PC pose stream</text>
+  <text x="425" y="353" text-anchor="middle" class="small">pose only</text>
+
+  <rect x="590" y="305" width="250" height="58" class="box"/>
+  <text x="715" y="331" text-anchor="middle" class="label">ESP32 navigation</text>
+  <text x="715" y="353" text-anchor="middle" class="small">Bug2, pure pursuit, recovery</text>
+
+  <rect x="900" y="305" width="125" height="58" class="box"/>
+  <text x="962.5" y="331" text-anchor="middle" class="label">Actuation</text>
+  <text x="962.5" y="353" text-anchor="middle" class="small">motor + servo</text>
+
+  <path d="M260 334 H330" class="arrow"/>
+  <path d="M520 334 H590" class="arrow"/>
+  <path d="M840 334 H900" class="arrow"/>
+
+  <text x="550" y="214" text-anchor="middle" class="note">Main change: decision-making moved from the PC to the robot firmware.</text>
+</svg>

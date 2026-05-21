@@ -1,0 +1,28 @@
+﻿# Build and generated output
+build/
+_build/
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+*.log
+
+# Local/editor state
+.vscode/
+.theia/
+*.code-workspace
+
+# Python/local tooling
+.venv/
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary/debug artifacts
+logs/
+tmp/
+temp/

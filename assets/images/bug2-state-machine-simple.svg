@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280" role="img" aria-labelledby="title desc">
+  <title id="title">Simplified Bug2 state machine</title>
+  <desc id="desc">Idle transitions to Go To Goal, which can transition to Follow Wall, Reached, or Stuck through wall-follow recovery logic.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2b2f36"/>
+    </marker>
+    <style>
+      .box { fill: #ffffff; stroke: #4f5d73; stroke-width: 2.2; rx: 12; }
+      .terminal { fill: #f7f9fc; stroke: #4f5d73; stroke-width: 2.2; rx: 12; }
+      .label { font: 700 21px Arial, sans-serif; fill: #172033; }
+      .edge { stroke: #2b2f36; stroke-width: 2.4; fill: none; marker-end: url(#arrow); }
+      .edgeLabel { font: 15px Arial, sans-serif; fill: #344052; }
+      .note { font: 16px Arial, sans-serif; fill: #445065; }
+    </style>
+  </defs>
+
+  <rect x="55" y="100" width="135" height="64" class="terminal"/>
+  <text x="122.5" y="139" text-anchor="middle" class="label">Idle</text>
+
+  <rect x="285" y="100" width="165" height="64" class="box"/>
+  <text x="367.5" y="139" text-anchor="middle" class="label">Go To Goal</text>
+
+  <rect x="560" y="100" width="165" height="64" class="box"/>
+  <text x="642.5" y="139" text-anchor="middle" class="label">Follow Wall</text>
+
+  <rect x="820" y="40" width="130" height="58" class="terminal"/>
+  <text x="885" y="76" text-anchor="middle" class="label">Reached</text>
+
+  <rect x="820" y="178" width="130" height="58" class="terminal"/>
+  <text x="885" y="214" text-anchor="middle" class="label">Stuck</text>
+
+  <path d="M190 132 H285" class="edge"/>
+  <path d="M450 132 H560" class="edge"/>
+  <text x="492" y="115" text-anchor="middle" class="edgeLabel">obstacle</text>
+
+  <path d="M725 116 C760 95, 780 77, 820 69" class="edge"/>
+  <text x="773" y="80" text-anchor="middle" class="edgeLabel">goal</text>
+
+  <path d="M725 148 C760 172, 780 197, 820 207" class="edge"/>
+  <text x="773" y="202" text-anchor="middle" class="edgeLabel">no recovery</text>
+
+  <path d="M560 164 C515 230, 350 230, 350 164" class="edge"/>
+  <text x="455" y="246" text-anchor="middle" class="edgeLabel">leave condition</text>
+
+  <text x="500" y="25" text-anchor="middle" class="note">Internal wall-follow modes are implementation details: track, inner corner, outer seek, front block, and dead end.</text>
+</svg>
