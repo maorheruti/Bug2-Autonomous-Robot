@@ -59,7 +59,7 @@ The ESP32 firmware combines:
 
 ## Engineering Report
 
-The professor-facing engineering reflection is available here:
+A detailed engineering report and project summary is available here:
 
 - [BUG2_PROJECT_REPORT_EXPORT.pdf](docs/BUG2_PROJECT_REPORT_EXPORT.pdf)
 - [BUG2_PROJECT_REPORT_EXPORT.md](docs/BUG2_PROJECT_REPORT_EXPORT.md)
@@ -68,4 +68,5 @@ The professor-facing engineering reflection is available here:
 
 The core system is implemented and demonstrated: onboard navigation, pure pursuit, Bug2-style wall following, sensor redesign, telemetry, and return-to-goal behavior are represented in the report and media.
 
-The robot is still an actively tuned research/engineering platform. Broader robustness testing across repeatable obstacle layouts and scenarios remains future work.
+The robot is still an actively tuned embedded robotics platform. Broader robustness testing across repeatable obstacle layouts and scenarios remains future work.
+
