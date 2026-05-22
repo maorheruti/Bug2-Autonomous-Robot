@@ -2,29 +2,6 @@
 
 ## Engineering Reflection and Project Summary
 
-<style>
-  .figure {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    margin: 1.15rem 0 1.35rem 0;
-  }
-  .figure img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
-  .caption {
-    font-style: italic;
-    font-size: 0.92em;
-    color: #333;
-    margin-top: 0.35rem;
-  }
-  h2, h3 {
-    break-after: avoid;
-    page-break-after: avoid;
-  }
-</style>
 
 ## Executive Summary
 
@@ -157,4 +134,5 @@ The fourth lesson is that simpler, inspectable logic can be better than a more g
 ## Conclusion
 
 This project documents a practical transition from a PC-controlled pure-pursuit RobotChaser to an onboard ESP32 Bug2 navigation system. The work combined architecture redesign, sensor upgrades, wall-follow algorithm development, steering calibration, telemetry tooling, and repeated physical testing. The result is a concise but realistic embedded robotics platform: not a perfectly finished product, but a well-instrumented system that demonstrates how classroom navigation ideas must be adapted, tested, and revised on real hardware.
+
 
